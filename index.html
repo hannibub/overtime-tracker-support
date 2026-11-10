@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Overtime Tracker – Support & Datenschutzerklärung (Privacy Policy)</title>
+    <style>
+        :root {
+            --bg: #0d1117;
+            --card: #161b22;
+            --text: #e6edf3;
+            --muted: #8b949e;
+            --accent: #1a80f2;
+            --border: #30363d;
+        }
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+            background-color: var(--bg);
+            color: var(--text);
+            line-height: 1.6;
+            margin: 0;
+            padding: 40px 20px;
+        }
+        .container {
+            max-width: 760px;
+            margin: 0 auto;
+        }
+        .card {
+            background-color: var(--card);
+            border: 1px solid var(--border);
+            border-radius: 16px;
+            padding: 28px;
+            margin-bottom: 24px;
+        }
+        h1 {
+            font-size: 2rem;
+            margin-top: 0;
+            color: #ffffff;
+        }
+        h2 {
+            font-size: 1.35rem;
+            color: var(--accent);
+            margin-top: 0;
+            border-bottom: 1px solid var(--border);
+            padding-bottom: 10px;
+        }
+        h3 {
+            font-size: 1.05rem;
+            margin-bottom: 6px;
+        }
+        p, li {
+            color: var(--text);
+        }
+        .muted {
+            color: var(--muted);
+            font-size: 0.9rem;
+        }
+        a {
+            color: var(--accent);
+            text-decoration: none;
+        }
+        a:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Overtime Tracker</h1>
+        <p class="muted">Arbeitszeit- & Überstundenerfassung für iOS</p>
+
+        <!-- SUPPORT SECTION -->
+        <div class="card" id="support">
+            <h2>Support & Kontakt</h2>
+            <p>Bei Fragen, Problemen oder Feedback zur App <strong>Overtime Tracker</strong> erreichst du den Support jederzeit per E-Mail:</p>
+            <p><strong>Entwickler:</strong> Fabian Köninger<br>
+            <strong>Support-Kontakt:</strong> <a href="mailto:support@plasticflow.com">Kontaktiere uns per E-Mail</a> (oder über GitHub Issues in diesem Repository).</p>
+            <h3>Häufige Fragen (FAQ)</h3>
+            <ul>
+                <li><strong>Wie funktioniert die automatische Geofence-Erfassung?</strong><br>
+                Hinterlege in den Einstellungen die Adresse oder GPS-Koordinaten deines Arbeitsplatzes und erlaube den Standortzugriff auf <em>„Immer“ (Always Allow)</em>, damit Ein- und Austrittszeiten im Hintergrund erkannt werden.</li>
+                <li><strong>Wie werden meine Daten gesichert?</strong><br>
+                Deine erfassten Schichten werden lokal auf deinem Gerät und in deinem persönlichen, privaten iCloud-Account (CloudKit) gespeichert.</li>
+            </ul>
+        </div>
+
+        <!-- PRIVACY POLICY (GERMAN) -->
+        <div class="card" id="privacy">
+            <h2>Datenschutzerklärung (Privacy Policy)</h2>
+            <p class="muted">Stand: November 2026</p>
+
+            <h3>1. Grundsatz: Keine Datenerhebung durch den Entwickler</h3>
+            <p>Der Schutz deiner Privatsphäre steht bei <strong>Overtime Tracker</strong> an erster Stelle. Diese App erhebt, überträgt oder verkauft <strong>keinerlei personenbezogene Daten</strong> an den Entwickler oder an Dritte. Es werden keine Analyse-, Tracking- oder Werbe-SDKs verwendet.</p>
+
+            <h3>2. Standortdaten (Geofencing)</h3>
+            <p>Wenn du die automatische Zeiterfassung aktivierst, nutzt die App die Ortungsdienste von iOS (CoreLocation Geofencing), um festzustellen, wann du deinen definierten Arbeitsort betrittst oder verlässt. Diese Standortprüfung findet ausschließlich lokal auf deinem iPhone statt. Dein Standortverlauf wird niemals auf externe Server übertragen.</p>
+
+            <h3>3. Lokale Speicherung & iCloud-Synchronisation</h3>
+            <p>Alle erfassten Arbeitszeiten, Dienste und Einstellungen werden lokal auf deinem Gerät (SwiftData) sowie optional in deiner privaten Apple iCloud-Datenbank (CloudKit) gespeichert, auf die ausschließlich du über deine Apple-ID Zugriff hast.</p>
+
+            <h3>4. Kalender-Integration (Optional)</h3>
+            <p>Wenn du die optionale Kalender-Synchronisation nutzt (Lokaler iOS-Kalender, Google Calendar oder Microsoft Outlook), erfolgt der Abruf der Kalendereinträge direkt zwischen deinem Gerät und dem jeweiligen Anbieter. Zugangs-Tokens (OAuth) werden ausschließlich lokal und hardwareverschlüsselt im iOS-Schlüsselbund (Keychain) deines Geräts abgelegt.</p>
+
+            <hr style="border: 0; border-top: 1px solid var(--border); margin: 24px 0;">
+
+            <h2>Privacy Policy (English Summary)</h2>
+            <p><strong>Overtime Tracker</strong> does not collect, transmit, store, or share any personal data, location data, or usage analytics on external developer servers.</p>
+            <ul>
+                <li><strong>Location Data:</strong> Geofence monitoring is processed 100% locally on your iOS device via Apple CoreLocation to log shift check-ins and check-outs.</li>
+                <li><strong>Data Storage:</strong> Shift logs and settings are stored locally on your device and synced solely to your personal, private Apple iCloud (CloudKit) container.</li>
+                <li><strong>Calendar Access:</strong> Optional calendar synchronization communicates directly between your device and Apple EventKit, Google Calendar API, or Microsoft Graph API. OAuth tokens are stored exclusively in your device's encrypted iOS Keychain.</li>
+            </ul>
+        </div>
+    </div>
+</body>
+</html>
